@@ -1,5 +1,7 @@
 # Example for cypress-testrail-integration package
 
+⚠️ Check that all Test Case IDs, which you use, are existed in Test Rail. If you try to add a new Test Run (if you don't use existed Test Run ID), it doesn't work, because Test Rail API doesn't allow creating a new Test Run using non-existed IDs. Example: you have these Test Case IDs = `['1', '2', '3']`, your Cypress autotests have these IDs in results = `['1', '2', '3', '4']` => error! because Test Rail doesn't contain Test Case with ID = `4`.
+
 1. Clone this project: 
   + `https://github.com/Smoliarick/cypress-testrail-integration-example.git` for HTTPS
   + `git@github.com:Smoliarick/cypress-testrail-integration-example.git` for SSH
